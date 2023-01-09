@@ -31,9 +31,11 @@ export default class Player extends Phaser.GameObjects.Container {
 		
 		if(this.cursorA.isDown) {
 			this.body.setVelocityX(-this.speed);
+			this.sprite.setFlip(true, false);
 		}
 		else if(this.cursorD.isDown) {
 			this.body.setVelocityX(this.speed);
+			this.sprite.setFlip(false, false);
 		}
 		else this.body.setVelocityX(0);
 		
