@@ -8,6 +8,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
 
 		// Seguimiento cámara
         this.scene.cameras.main.startFollow(this, false, 1, 0, 0, 70);
+		
 
         // Fisicas
 		this.scene.physics.add.existing(this);
