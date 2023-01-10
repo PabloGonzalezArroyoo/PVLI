@@ -24,7 +24,7 @@ export default class GameScene extends Phaser.Scene {
 		const height = this.scale.height;
 		
 		this.levelSize = width*2;
-		this.add.rectangle(0, 0, this.levelSize, height, '#000000').setOrigin(0,0);
+		this.add.rectangle(0, 0, this.levelSize, height, 0xffffff).setOrigin(0,0);
 
 		this.player = new Player(this, width / 2, height - 40);
 
